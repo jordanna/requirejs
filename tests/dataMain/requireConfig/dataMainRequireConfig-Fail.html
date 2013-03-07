@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>require.js: data-main baseUrl in require.config Test</title>
+    <script type="text/javascript" src="../../doh/runner.js"></script>
+    <script type="text/javascript" src="../../doh/_browserRunner.js"></script>
+
+    <!-- config-fail.js calls require.config to set the baseUrl -->
+    <script type="text/javascript" data-main="src/main" src="../../../require.js"></script>
+    <script type="text/javascript" src="config-fail.js"></script>
+</head>
+<body>
+    <h1>require.js: data-main baseUrl in require.config Test</h1>
+
+    <p>Confirm that setting a baseUrl in require.config does not mess up the data-main module
+    ID.
+
+    <p>Check console for messages</p>
+</body>
+</html>
